@@ -3,7 +3,7 @@ Contains Marlin 2.x configuration files to run on the Kingroon KP3 with the grap
 
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/marlin-info-screen-vsmall.png)
 
-# Obtaining Marling Files
+# Obtaining Marlin Files
 The marlin firmware can be obtained from [marlingfw.org](https://marlingfw.org "marlingfw.org") or directly from GitHub at [https://github.com/MarlinFirmware/Marlin](/https://github.com/MarlinFirmware/Marlin "https://github.com/MarlinFirmware/Marlin").
 
 The example marlin configuration files can be obtained from GitHub at [https://github.com/MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations "https://github.com/MarlinFirmware/Configurations")
