@@ -40,7 +40,7 @@ In the platformio.ini file change the value in the `line default_envs` from `meg
 8. Uncomment the line **`#define TFT_COLOR_UI`**
 9. Uncomment the line **`#define SINGLE_TOUCH_NAVIGATION`**
 
-### Chages to pins_MKS_ROBIN_MINI.h
+### Changes to pins_MKS_ROBIN_MINI.h
 The changes made to the configuration file will work but the screen will be blank when the printer is on. This is due to an issue with the board file. The following changes are necessary for the screen to be visible. The file can be found in the folder **src/pins/stm32f1**.
 
 1. Rename `#define LCD_USE_DMA_FSM` to **`#define TFT_USE_DMA_FSM`**
