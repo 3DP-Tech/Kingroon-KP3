@@ -1,5 +1,4 @@
 # Standard
 This folder contains the files for a standard Kingroon KP3 configuration.
 
-# Reversed
-This folder contains the same configuration as the standard except with the motor direction reversed. If you experince the steppers moving in the opposite direction after flashing the standard configuration use this version instead.
+If after applying the firmware you find your motors run in reverse, use **`Configuration.h.REVERSED`** instead of `Configuration.h` and remove the `.REVERSED` extenion.

@@ -1,5 +1,5 @@
 # Marling Firmware for Kingroon-KP3 with Touch Screen Support
-Contains Marlin 2.x configuration files to run on the Kingroon KP3 with the graphical touch interface.
+Contains **Marlin 2.0.8.2** configuration files to run on the Kingroon KP3 with the graphical touch interface.
 
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/marlin-info-screen-vsmall.png)
 
@@ -54,7 +54,7 @@ It appears that on some KP3 machines, the stepper motor wiring has been reversed
 3. Change the value of `#define INVERT_Z_DIR` from `true` to **`false`**
 4. Change the value of `#define INVERT_E0_DIR` from `false` to **`true`**
 
-I had this experience on my KP3. Even after flashing the original KP3 firmware my steppers ran the wrong direction. I had to update the KP3 firmware configuration.
+I had this experience on my KP3. Even after flashing the original KP3 firmware my steppers ran the wrong direction. I also had to update the OEM KP3 firmware configuration.
 
 ### Optional Changes
 
