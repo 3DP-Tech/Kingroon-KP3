@@ -6,7 +6,7 @@ Contains Marlin 2.x configuration files to run on the Kingroon KP3 with the grap
 # Obtaining Marlin Files
 The marlin firmware can be obtained from [marlingfw.org](https://marlingfw.org "marlingfw.org") or directly from GitHub at [https://github.com/MarlinFirmware/Marlin](/https://github.com/MarlinFirmware/Marlin "https://github.com/MarlinFirmware/Marlin").
 
-The example marlin configuration files can be obtained from GitHub at [https://github.com/MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations "https://github.com/MarlinFirmware/Configurations")
+The example Marlin configuration files can be obtained from GitHub at [https://github.com/MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations "https://github.com/MarlinFirmware/Configurations")
 
 # Building the Firmware
 There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy.
@@ -15,30 +15,29 @@ Here is one that I like:
 
 [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")
 
-## Using the Configuration Files
+## Using these Configuration Files
 The simplest way to update the firmware is to copy the configuration files from this repository into your Marlin firmware folder after downloading and unzipping the firmware.
 
 Copy the files as follows:
 1. Copy **platformio.ini** to the **Marlin** folder
 2. Copy **Configuration.h** to the **Marlin/Marlin** folder.
-3. Copy **pins_MKS_ROBIN_MINI.h** to the **Marlin/Marlin/src/pins/stm32f1** folder.
+3. Copy **Configuration_adv.h** to the **Marlin/Marlin** folder.
+4. Copy **pins_MKS_ROBIN_MINI.h** to the **Marlin/Marlin/src/pins/stm32f1** folder.
 
-## Manual Changes
+## or, Make the Changes Directly
 If you wish to make the changes yourself follow the instructions below.
-
-### Change to Platform.ini File
-In the platformio.ini file change the value in the `line default_envs` from `mega2560` to **`mks_robin_mini`**.
-
-### Changes to Configuration.h
+### Getting Started
 1. Download the latest Marlin firmware and unzip the files to a working folder.
-2. Copy the the Kingroon KP3 configuration files provided by the Marlin firmware examples in **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder in your working folder making sure to overwrite the existing files.
-3. Open the platform.ini file and change **`default_envs = mega2560`** to **`default_envs = mks_robin_mini`**
-4. Make the following changes in the **Configuration.h** file
-5. Uncomment the line **`#define MKS_ROBIN_TFT24`**
-6. Comment the line **`#define TFT_GENERIC`** (add // to the beginning of the line)
-7. Comment the line **`#define TFT_CLASSIC_UI`**
-8. Uncomment the line **`#define TFT_COLOR_UI`**
-9. Uncomment the line **`#define SINGLE_TOUCH_NAVIGATION`**
+2. Download the example configuration files and unzip them into a working folder.
+3. Copy the the Kingroon KP3 configuration files provided by the Marlin firmware examples in **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder in your working folder making sure to overwrite the existing files.
+### Change to Platform.ini File
+1. Open the **platform.ini** file and change **`default_envs = mega2560`** to **`default_envs = mks_robin_mini`**
+### Changes to Configuration.h
+1. Uncomment the line **`#define MKS_ROBIN_TFT24`**
+2. Comment the line **`#define TFT_GENERIC`** (add // to the beginning of the line)
+3. Comment the line **`#define TFT_CLASSIC_UI`**
+4. Uncomment the line **`#define TFT_COLOR_UI`**
+5. Uncomment the line **`#define SINGLE_TOUCH_NAVIGATION`**
 
 ### Changes to pins_MKS_ROBIN_MINI.h
 The changes made to the configuration file will work but the screen will be blank when the printer is on. This is due to an issue with the board file. The following changes are necessary for the screen to be visible. The file can be found in the folder **src/pins/stm32f1**.
