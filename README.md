@@ -54,7 +54,7 @@ It appears that on some KP3 machines, the stepper motor wiring has been reversed
 3. Change the value of `#define INVERT_Z_DIR` from `true` to **`false`**
 4. Change the value of `#define INVERT_E0_DIR` from `false` to **`true`**
 
-I had this similar experience on my KP3. Even after flashing the original KP3 firmware my steppers ran the wrong direction. I also had to update the OEM KP3 firmware configuration.
+I had this similar experience on my KP3 after flashing the original KP3 firmware. My steppers ran the wrong direction. I had to update the OEM KP3 firmware configuration to reverse the motors.
 
 ### Optional Changes
 
