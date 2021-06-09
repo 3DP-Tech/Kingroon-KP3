@@ -47,18 +47,18 @@ The changes made to the configuration file will work but the screen will be blan
 3. Rename `#define LCD_BACKLIGHT_PIN` to **`#define TFT_BACKLIGHT_PIN`**
 
 ### Changing Stepper Direction
-It appears that on some KP3 machines, the stepper motor wiring has been reversed. If after flashing the firmware check the direction of the motors by choosing Motion from the menu and trying to move each axis independently. If the steppers move in the opposite direction, make the changes below to the Configuration.h file and reflash the firmware.
+It appears that on some KP3 machines, the stepper motor wiring has been reversed. If after flashing the firmware check the direction of the motors by choosing Motion from the menu and trying to move each axis independently. If the steppers move in the opposite direction, make the changes below to the **Configuration.h** file and reflash the firmware.
 
 1. Change the value of `#define INVERT_X_DIR` from `false` to **`true`**
 2. Change the value of `#define INVERT_Y_DIR` from `false` to **`true`**
 3. Change the value of `#define INVERT_Z_DIR` from `true` to **`false`**
 4. Change the value of `#define INVERT_E0_DIR` from `false` to **`true`**
 
-I had this experience on my KP3. Even after flashing the original KP3 firmware my steppers ran the wrong direction. I also had to update the OEM KP3 firmware configuration.
+I had this similar experience on my KP3. Even after flashing the original KP3 firmware my steppers ran the wrong direction. I also had to update the OEM KP3 firmware configuration.
 
 ### Optional Changes
 
-These are additional changes I made to Configuration.h out of personal preference.
+These are additional changes I made to **Configuration.h** out of personal preference.
 
 1. Uncomment the line **`#define SPEAKER`**
 2. Change the value in `#define Z_AFTER_HOMING` from `10` to **`5`**
