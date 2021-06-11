@@ -62,3 +62,7 @@ These are additional changes I made to **Configuration.h** out of personal prefe
 
 1. Uncomment the line **`#define SPEAKER`**
 2. Change the value in `#define Z_AFTER_HOMING` from `10` to **`5`**
+
+These are additional changes I made to **Configuration_adv.h** out of personal preference.
+
+1. Uncomment **`#define FAN_KICKSTART_TIME 100`**
