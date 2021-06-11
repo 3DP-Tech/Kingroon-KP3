@@ -1,5 +1,5 @@
 ## Marlin Firmware
-This folder contains the Marlin 2.x compiled firmware for an OEM Kingroon KP3.
+This folder contains the Marlin **Marlin 2.0.8.2** compiled firmware for an OEM Kingroon KP3.
 
 To update your firmware, turn off your printer, copy the **`ROBIN_MINI.BIN`** file to a MicroSD card, insert the card into the printer and then turn it on.
 
