@@ -3,11 +3,6 @@ Contains **Marlin 2.0.8.2** configuration files to run on the Kingroon KP3 with 
 
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/marlin-info-screen-vsmall.png)
 
-# Obtaining Marlin Files
-The marlin firmware can be obtained from [marlingfw.org](https://marlingfw.org "marlingfw.org") or directly from GitHub at [https://github.com/MarlinFirmware/Marlin](/https://github.com/MarlinFirmware/Marlin "https://github.com/MarlinFirmware/Marlin").
-
-The example Marlin configuration files can be obtained from GitHub at [https://github.com/MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations "https://github.com/MarlinFirmware/Configurations")
-
 # Precompiled Firmware
 You will find precompiled versions of the firmware ready for an OEM KP3. If you made any modifications to your printer, such as adding a auto bed leveler, you will need to compile the firmware.
 
@@ -19,6 +14,11 @@ There are numerous videos available on how to compile the code using Visual Stud
 Here is one that I like:
 
 [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")
+
+## Obtaining Marlin Files
+The marlin firmware can be obtained from [marlingfw.org](https://marlingfw.org "marlingfw.org") or directly from GitHub at [https://github.com/MarlinFirmware/Marlin](/https://github.com/MarlinFirmware/Marlin "https://github.com/MarlinFirmware/Marlin").
+
+The example Marlin configuration files can be obtained from GitHub at [https://github.com/MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations "https://github.com/MarlinFirmware/Configurations")
 
 ## Using these Configuration Files
 The simplest way to update the firmware is to copy the configuration files from this repository into your Marlin firmware folder after downloading and unzipping the firmware.
