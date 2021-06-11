@@ -8,6 +8,11 @@ The marlin firmware can be obtained from [marlingfw.org](https://marlingfw.org "
 
 The example Marlin configuration files can be obtained from GitHub at [https://github.com/MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations "https://github.com/MarlinFirmware/Configurations")
 
+# Precompiled Firmware
+You will find precompiled versions of the firmware ready for an OEM KP3. If you made any modifications to your printer, such as adding a auto bed leveler, you will need to compile the firmware.
+
+The precompiled firmware is located in the **bin** folder.
+
 # Building the Firmware
 There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy.
 
