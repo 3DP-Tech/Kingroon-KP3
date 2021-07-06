@@ -35,39 +35,27 @@ If you wish to make the changes yourself follow the instructions below.
 1. Download the latest Marlin firmware and unzip the files to a working folder.
 2. Download the example configuration files and unzip them into a working folder.
 3. Copy the the Kingroon KP3 configuration files provided by the Marlin firmware examples in **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder in your working folder making sure to overwrite the existing files.
-### Change to Platform.ini File
-1. Open the **platform.ini** file and change **`default_envs = mega2560`** to **`default_envs = mks_robin_mini`**
-### Changes to Configuration.h
-1. Uncomment the line **`#define MKS_ROBIN_TFT24`**
-2. Comment the line **`#define TFT_GENERIC`** (add // to the beginning of the line)
-3. Comment the line **`#define TFT_CLASSIC_UI`**
-4. Uncomment the line **`#define TFT_COLOR_UI`**
-5. Uncomment the line **`#define SINGLE_TOUCH_NAVIGATION`**
 
-### Changes to pins_MKS_ROBIN_MINI.h
-The changes made to the configuration file will work but the screen will be blank when the printer is on. This is due to an issue with the board file. The following changes are necessary for the screen to be visible. The file can be found in the folder **src/pins/stm32f1**.
-
-1. Rename `#define LCD_USE_DMA_FSM` to **`#define TFT_USE_DMA_FSM`**
-2. Rename `#define LCD_RESET_PIN` to **`#define TFT_RESET_PIN`**
-3. Rename `#define LCD_BACKLIGHT_PIN` to **`#define TFT_BACKLIGHT_PIN`**
+|File|Line Number|Reference|Comment|
+|-|:-:|-|-|
+|Platform.ini|16|default_envs = mega2560|Change mega2560 to mks_robin_mini|
+|Configuration.h|1292|#define INVERT_X_DIR|Change the value from false to true. If the X stepper motor moves in the opposite direction leave this value the same.|
+|Configuration.h|1293|#define INVERT_Y_DIR|Change the value from false to true. If the Y stepper motor moves in the opposite direction leave this value the same.|
+|Configuration.h|1294|#define INVERT_Z_DIR|Change the value from true to false. If the Z stepper motor moves in the opposite direction leave this value the same.|
+|Configuration.h|1302|#define INVERT_E0_DIR|Change the value from false to true. If the E stepper motor moves in the opposite direction leave this value the same.|
+|Configuration.h|2184|#define SPEAKER|Uncomment this line|
+|Configuration.h|2184|#define Z_AFTER_HOMING|Change the value from 10 to 5.|
+|Configuration.h|2584|#define MKS_ROBIN_TFT24|Uncomment this line|
+|Configuration.h|2648|#define TFT_GENERIC|Comment this line|
+|Configuration.h|2673|#define TFT_CLASSIC_UI|Comment this line|
+|Configuration.h|2674|#define TFT_COLOR_UI|Uncomment this line|
+|Configuration.h|2728|#define SINGLE_TOUCH_NAVIGATION|Uncomment this line|
+|pins_MKS_ROBIN_MINI.h|154|#define LCD_USE_DMA_FSM|Change the text LCD to TFT so the line now reads #define TFT_USE_DMA_FSM|
+|pins_MKS_ROBIN_MINI.h|158|#define LCD_RESET_PIN|Change the text LCD to TFT so the line now reads #define TFT_RESET_PIN. Optionally this can be changed in the comment found on line 147.|
+|pins_MKS_ROBIN_MINI.h|159|#define LCD_BACKLIGHT_PIN|Change the text LCD to TFT so the line now reads #define TFT_BACKLIGHT_PIN|
+|Configuration_adv.h|490|#define FAN_KICKSTART_TIME|Uncomment this line|
 
 ### Changing Stepper Direction
 It appears that on some KP3 machines, the stepper motor wiring has been reversed. If after flashing the firmware check the direction of the motors by choosing Motion from the menu and trying to move each axis independently. If the steppers move in the opposite direction, make the changes below to the **Configuration.h** file and reflash the firmware.
 
-1. Change the value of `#define INVERT_X_DIR` from `false` to **`true`**
-2. Change the value of `#define INVERT_Y_DIR` from `false` to **`true`**
-3. Change the value of `#define INVERT_Z_DIR` from `true` to **`false`**
-4. Change the value of `#define INVERT_E0_DIR` from `false` to **`true`**
-
 I had this similar experience on my KP3 after flashing the original KP3 firmware. My steppers ran the wrong direction. I had to update the OEM KP3 firmware configuration to reverse the motors.
-
-### Optional Changes
-
-These are additional changes I made to **Configuration.h** out of personal preference.
-
-1. Uncomment the line **`#define SPEAKER`**
-2. Change the value in `#define Z_AFTER_HOMING` from `10` to **`5`**
-
-These are additional changes I made to **Configuration_adv.h** out of personal preference.
-
-1. Uncomment **`#define FAN_KICKSTART_TIME 100`**
