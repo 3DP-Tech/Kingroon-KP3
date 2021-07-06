@@ -37,7 +37,7 @@ If you wish to make the changes yourself follow the instructions below.
 3. Copy the the Kingroon KP3 configuration files provided by the Marlin firmware examples in **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder in your working folder making sure to overwrite the existing files.
 
 |File|Line Number|Reference|Comment|
-|-|:-:|-|-|
+|:-|:-:|:-|:-|
 |Platform.ini|16|default_envs = mega2560|Change mega2560 to mks_robin_mini|
 |Configuration.h|1292|#define INVERT_X_DIR|Change the value from false to true. If the X stepper motor moves in the opposite direction leave this value the same.|
 |Configuration.h|1293|#define INVERT_Y_DIR|Change the value from false to true. If the Y stepper motor moves in the opposite direction leave this value the same.|
