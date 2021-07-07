@@ -8,7 +8,7 @@ You will find precompiled versions of the firmware ready for an OEM KP3. If you 
 
 The precompiled firmware is located in the **bin** folder.
 
-# Building the Firmware
+# Building the Firmware with Vanilla Marlin
 There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy.
 
 Here is one that I like:
@@ -35,6 +35,7 @@ If you wish to make the changes yourself follow the instructions below.
 1. Download the latest Marlin firmware and unzip the files to a working folder.
 2. Download the example configuration files and unzip them into a working folder.
 3. Copy the the Kingroon KP3 configuration files provided by the Marlin firmware examples in **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder in your working folder making sure to overwrite the existing files.
+4. Edit the files listed below with each of the corresponding changes.
 
 |File|Line Number|Reference|Comment|
 |:-|:-:|:-|:-|
@@ -55,7 +56,7 @@ If you wish to make the changes yourself follow the instructions below.
 |pins_MKS_ROBIN_MINI.h|159|#define LCD_BACKLIGHT_PIN|Change the text **LCD** to **TFT** so the line now reads #define TFT_BACKLIGHT_PIN|
 |Configuration_adv.h|490|#define FAN_KICKSTART_TIME|Uncomment this line|
 
-### Changing Stepper Direction
+### NOTE: Changing Stepper Direction
 It appears that on some KP3 machines, the stepper motor wiring has been reversed. If after flashing the firmware check the direction of the motors by choosing Motion from the menu and trying to move each axis independently. If the steppers move in the opposite direction, make the changes below to the **Configuration.h** file and reflash the firmware.
 
 I had this similar experience on my KP3 after flashing the original KP3 firmware. My steppers ran the wrong direction. I had to update the OEM KP3 firmware configuration to reverse the motors.
