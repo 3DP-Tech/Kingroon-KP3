@@ -15,7 +15,7 @@ You will find precompiled versions of the firmware ready for an OEM KP3. If you 
 
 The precompiled firmware is located in the **bin** folder.
 
-# Building the Firmware wit Vanilla Marlin
+# Building the Firmware with Vanilla Marlin
 There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy.
 
 Here is one that I like:
