@@ -6,7 +6,7 @@
 ![](https://img.shields.io/maintenance/yes/2021?style=flat-square)
 
 # Marlin Firmware for Kingroon-KP3 with Touch Screen Support
-Contains **Marlin 2.0.9.0** configuration files to run on the Kingroon KP3 with the graphical touch interface.
+**Marlin 2.0.9.0** Firmware for Kingroon-KP3 with Touch Screen Support
 
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-410.png)
 
