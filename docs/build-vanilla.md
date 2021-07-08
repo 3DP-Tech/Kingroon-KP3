@@ -4,6 +4,7 @@
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
 
 ## Steps
+
 |Step|Description|
 |-|-|
 |1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip)|
@@ -13,10 +14,10 @@
 |5|Download the files from this repository from [https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip](https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip)|
 |6|Copy the file **\Configurations\config\examples\Kingroon\KP3\Configuration.h** to the folder **Marlin-2.0.9\Marlin**.|
 |7|Copy the file **\Configurations\config\examples\Kingroon\KP3\Configuration_adv.h** to them folder **Marlin-2.0.9\Marlin**.|
-|7|Unzip the repository files into a working folder. Keep track of this folder's location.|
-|8|Make the changes described in the table below for each of he files.|
-|9|Compile the firmware using Visual Studio Code. There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy. Here is one that I like: [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")|
-|10|Flash the firmware using the binary file produced as a result of step 9.|
+|8|Unzip the repository files into a working folder. Keep track of this folder's location.|
+|9|Make the changes described in the table below for each of he files.|
+|10|Compile the firmware using Visual Studio Code. There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy. Here is one that I like: [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")|
+|11|Flash the firmware using the binary file produced as a result of step 10.|
 
 ## File Changes
 
@@ -40,5 +41,5 @@
 |Configuration_adv.h|490|#define FAN_KICKSTART_TIME|Uncomment this line|
 
 ### NOTE: Changing Stepper Direction
-It appears that on some KP3 machines, the stepper motor wiring has been reversed. After flashing the firmware, do not attempt homing until you check the stepper motor direction. This can be done by choosing **Motion** from the menu and trying to move each axis independently. When moving the axis, only make small changes. If any of the steppers move in the opposite direction, change the value of `*INVERT_?_DIR*` from the current value to the opposite value (change to **true** if currently **false**). For example, if the X stepper is running in the opposite direction, change the value of **INVERT_X_DIR** from **true** to **false**. After making the changes, repeat steps 9 and 10. 
+It appears that on some KP3 machines, the stepper motor wiring has been reversed. After flashing the firmware, do not attempt homing until you check the stepper motor direction. This can be done by choosing **Motion** from the menu and trying to move each axis independently. When moving the axis, only make small changes. If any of the steppers move in the opposite direction, change the value of `*INVERT_?_DIR*` from the current value to the opposite value (change to **true** if currently **false**). For example, if the X stepper is running in the opposite direction, change the value of **INVERT_X_DIR** from **true** to **false**. After making the changes, repeat steps 10 and 11. 
 
