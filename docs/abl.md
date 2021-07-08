@@ -1,6 +1,6 @@
 ### [Home](https://3dp-tech.github.io/Kingroon-KP3/)
 
-# Add Auto Bed Leveling
+# Add Auto Bed Leveling Support
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
 
 To add a proximity sensor for auto-bed leveling make the file changes outlined in the table below.
