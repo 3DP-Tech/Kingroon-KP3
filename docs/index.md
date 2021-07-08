@@ -6,12 +6,12 @@ This repository contains **Marlin 2.0.9.0** configuration files to run on the Ki
 # Options
 ### [Using Precompiled Firmware](https://3dp-tech.github.io/Kingroon-KP3/precompiled)
 
-Use this option if you do not want to compile the firmware and your printer is still stock (no upgrades).
+Use this option if your printer is still stock (no upgrades).
 
 ### [Building the Firmware from Configuration Files](https://3dp-tech.github.io/Kingroon-KP3/build-config)
 
-Use this option if you want to compile the firmware yourself with all the predefined changes.
+Use this option if you want to compile the firmware yourself with all the provided configuration files.
 
 ### [Building the Firmware from Vanilla Marlin](https://3dp-tech.github.io/Kingroon-KP3/build-vanilla)
 
-Use this option if you want to compile the firmware yourself with all the predefined changes and make additional changes for your specific printer configuration.
+Use this option if you want to compile to from vanilla Marlin to make changes for your specific printer configuration.
