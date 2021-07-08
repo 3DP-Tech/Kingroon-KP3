@@ -6,7 +6,7 @@
 ## Steps
 
 |Step|Description|
-|-|-|
+|:-:|-|
 |1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip)|
 |2|Unzip the Marlin files into a woking folder. Keep track of this folder's location.|
 |3|Download the Marlin example configuration files from [https://github.com/MarlinFirmware/Configurations/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Configurations/archive/refs/tags/2.0.9.zip)|
