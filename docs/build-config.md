@@ -5,11 +5,11 @@
 
 |Step|Description|Comments|
 |-|-|-|
-|1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9](https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9)||
+|1|Download the Marlin 2.0.9.0 files from [](https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9)||
 |2|Unzip the Marlin files into a woking folder.||
-|3|Download the Marlin example configuration files from [https://github.com/MarlinFirmware/Configurations/tree/release-2.0.9/config/examples/Kingroon/KP3](https://github.com/MarlinFirmware/Configurations/tree/release-2.0.9/config/examples/Kingroon/KP3")||
+|3|Download the Marlin example configuration files from [](https://github.com/MarlinFirmware/Configurations/tree/release-2.0.9/config/examples/Kingroon/KP3")||
 |4|Unzip the example configuration files to a working folder.||
-|5|Download the files from this repository from |https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip||
+|5|Download the files from this repository from [](https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip)||
 |6|Copy the **Configuration.h** file from **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder created in Step 2.||
 |7|Copy the **Configuration_adv.h** file from **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder created in Step 2.||
 |7|Unzip the repository files into a working folder||
