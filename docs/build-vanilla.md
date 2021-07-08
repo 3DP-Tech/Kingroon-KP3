@@ -3,6 +3,7 @@
 # Building the Firmware from Vanilla Marlin
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
 
+## Steps
 |Step|Description|
 |-|-|
 |1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip)|
@@ -10,15 +11,14 @@
 |3|Download the Marlin example configuration files from [https://github.com/MarlinFirmware/Configurations/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Configurations/archive/refs/tags/2.0.9.zip)|
 |4|Unzip the example configuration files to a working folder. Keep track of this folder's location.|
 |5|Download the files from this repository from [https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip](https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip)|
-|6|Copy the **Configuration.h** file from **\Configurations\config\examples\Kingroon\KP3** to the **Marlin-2.0.9\Marlin** folder.|
-|7|Copy the **Configuration_adv.h** file from **\Configurations\config\examples\Kingroon\KP3** to the **Marlin-2.0.9\Marlin** folder.|
+|6|Copy the file **\Configurations\config\examples\Kingroon\KP3\Configuration.h** to the folder **Marlin-2.0.9\Marlin**.|
+|7|Copy the file **\Configurations\config\examples\Kingroon\KP3\Configuration_adv.h** to them folder **Marlin-2.0.9\Marlin**.|
 |7|Unzip the repository files into a working folder. Keep track of this folder's location.|
-|8|Copy the file **platformio.ini** from this repository to the **Marlin-2.0.9** folder.|
-|9|Copy the file **Configuration.h** from this repository to the **Marlin-2.0.9\Marlin** folder.|
-|10|Copy the file **Configuration_adv.h** from this repository to the **Marlin-2.0.9\Marlin** folder.|
-|11|Copy the file **pins_MKS_ROBIN_MINI.h** from this repository to the **Marlin-2.0.9\Marlin\src\pins\stm32f1** folder.|
-|12|Compile the firmware using Visual Studio Code. There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy. Here is one that I like: [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")|
+|8|Make the changes described in the table below for each of he files.|
+|9|Compile the firmware using Visual Studio Code. There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy. Here is one that I like: [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")|
+|10|Flash the firmware using the binary file produced as a result of step 9.|
 
+## File Changes
 
 |File|Line Number|Reference|Comment|
 |:-|:-:|:-|:-|
@@ -39,6 +39,6 @@
 |pins_MKS_ROBIN_MINI.h|159|#define LCD_BACKLIGHT_PIN|Change the text **LCD** to **TFT** so the line now reads #define TFT_BACKLIGHT_PIN|
 |Configuration_adv.h|490|#define FAN_KICKSTART_TIME|Uncomment this line|
 
-### <sup>1</sup> Changing Stepper Direction
-It appears that on some KP3 machines, the stepper motor wiring has been reversed. After flashing the firmware, do not attempt homing until you check the stepper motor direction. This can be done by choosing Motion from the menu and trying to move each axis independently. If the steppers move in the opposite direction, change the values back to their original values and reflash the firmware.
+### NOTE: Changing Stepper Direction
+It appears that on some KP3 machines, the stepper motor wiring has been reversed. After flashing the firmware, do not attempt homing until you check the stepper motor direction. This can be done by choosing **Motion** from the menu and trying to move each axis independently. When moving the axis, only make small changes. If any of the steppers move in the opposite direction, change the value of `*INVERT_?_DIR*` from the current value to the opposite value (change to **true** if currently **false**). For example, if the X stepper is running in the opposite direction, change the value of **INVERT_X_DIR** from **true** to **false**. After making the changes, repeat steps 9 and 10. 
 

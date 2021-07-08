@@ -14,7 +14,8 @@
 |7|Copy the file **Kingroon-KP3-M.2090.2\Configuration\Configuration_adv.h** to the folder **Marlin-2.0.9\Marlin**.|
 |8|Copy the file **Kingroon-KP3-M.2090.2\Configuration\pins_MKS_ROBIN_MINI.h** to the folder **Marlin-2.0.9\Marlin\src\pins\stm32f1**.|
 |9|Compile the firmware using Visual Studio Code. There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy. Here is one that I like: [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")|
+|10|Flash the firmware using the binary file produced as a result of step 9.|
 
 ### NOTE: Checking Stepper Direction
-It appears that on some KP3 machines, the stepper motor wiring has been reversed. After flashing the firmware, do not attempt homing until you check the stepper motor direction. This can be done by choosing **Motion** from the menu and trying to move each axis independently. When moving the axis, only make small changes. If the steppers move in the opposite direction, repeat steps 6 and 9 using the file **Kingroon-KP3-M.2090.2\Configuration\Configuration.h.REVERSED**. Rename this file by removing the **.REVERSED** extension.
+It appears that on some KP3 machines, the stepper motor wiring has been reversed. After flashing the firmware, do not attempt homing until you check the stepper motor direction. This can be done by choosing **Motion** from the menu and trying to move each axis independently. When moving the axis, only make small changes. If the steppers move in the opposite direction, repeat steps 6, 9 and 10 using the file **Kingroon-KP3-M.2090.2\Configuration\Configuration.h.REVERSED**. Rename this file by removing the **.REVERSED** extension.
 
