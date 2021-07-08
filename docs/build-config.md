@@ -3,7 +3,7 @@
 # Building the Firmware with Configuration Files
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
 
-|Step|Description|Comments|
+|Step|Description|
 |-|-|
 |1|Download the Marlin 2.0.9.0 files from [](https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9)|
 |2|Unzip the Marlin files into a woking folder.|
