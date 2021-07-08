@@ -5,7 +5,7 @@
 
 |Step|Description|
 |-|-|
-|1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9](https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9)|
+|1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip)|
 |2|Unzip the Marlin files into a woking folder.|
 |3|Download the Marlin example configuration files from [https://github.com/MarlinFirmware/Configurations/tree/release-2.0.9/config/examples/Kingroon/KP3](https://github.com/MarlinFirmware/Configurations/tree/release-2.0.9/config/examples/Kingroon/KP3)|
 |4|Unzip the example configuration files to a working folder.|
