@@ -3,10 +3,10 @@ This repository contains **Marlin 2.0.9.0** configuration files to run on the Ki
 
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/marlin-info-screen-vsmall.png)
 
-# Precompiled Firmware
-You will find precompiled versions of the firmware ready for an OEM KP3. If you made any modifications to your printer, such as adding a auto bed leveler, you will need to compile the firmware.
 
-The precompiled firmware is located in the **bin** folder.
+# Options
+## Using Precompiled Firmware
+
 
 # Building the Firmware with Vanilla Marlin
 There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy.
