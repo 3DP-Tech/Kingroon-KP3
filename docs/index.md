@@ -15,3 +15,7 @@ Use this option if you want to compile the firmware yourself with all the provid
 ### [Building the Firmware from Vanilla Marlin](https://3dp-tech.github.io/Kingroon-KP3/build-vanilla)
 
 Use this option if you want to compile to from vanilla Marlin to make changes for your specific printer configuration.
+
+### [Add Auto Bed Leveling Support](https://3dp-tech.github.io/Kingroon-KP3/abl)
+
+Use this option if you have a proximity sensor and wish to enable automatic bed leveling.
