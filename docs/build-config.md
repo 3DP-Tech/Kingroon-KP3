@@ -2,6 +2,14 @@
 
 # Building the Firmware with Configuration Files
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
+
+|Step|Description|
+|-|-|
+|1|Download the Marlin files from ...|
+|2|Unzip the Marlin files into a woking folder.|
+
+
+
 There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy.
 
 Here is one that I like:
