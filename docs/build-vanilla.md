@@ -1,38 +1,24 @@
-# Marling Firmware for Kingroon-KP3 with Touch Screen Support
-This repository contains **Marlin 2.0.9.0** configuration files to run on the Kingroon KP3 with the graphical touch interface as shown below.
-
-![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
-
 ### [Home](https://3dp-tech.github.io/Kingroon-KP3/)
 
-# Building the Firmware with Vanilla Marlin
-There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy.
+# Building the Firmware from Vanilla Marlin
+![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
 
-Here is one that I like:
+|Step|Description|
+|-|-|
+|1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip)|
+|2|Unzip the Marlin files into a woking folder. Keep track of this folder's location.|
+|3|Download the Marlin example configuration files from [https://github.com/MarlinFirmware/Configurations/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Configurations/archive/refs/tags/2.0.9.zip)|
+|4|Unzip the example configuration files to a working folder. Keep track of this folder's location.|
+|5|Download the files from this repository from [https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip](https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip)|
+|6|Copy the **Configuration.h** file from **\Configurations\config\examples\Kingroon\KP3** to the **Marlin-2.0.9\Marlin** folder.|
+|7|Copy the **Configuration_adv.h** file from **\Configurations\config\examples\Kingroon\KP3** to the **Marlin-2.0.9\Marlin** folder.|
+|7|Unzip the repository files into a working folder. Keep track of this folder's location.|
+|8|Copy the file **platformio.ini** from this repository to the **Marlin-2.0.9** folder.|
+|9|Copy the file **Configuration.h** from this repository to the **Marlin-2.0.9\Marlin** folder.|
+|10|Copy the file **Configuration_adv.h** from this repository to the **Marlin-2.0.9\Marlin** folder.|
+|11|Copy the file **pins_MKS_ROBIN_MINI.h** from this repository to the **Marlin-2.0.9\Marlin\src\pins\stm32f1** folder.|
+|12|Compile the firmware using Visual Studio Code. There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy. Here is one that I like: [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")|
 
-[https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")
-
-## Obtaining Marlin Files
-The marlin firmware can be obtained from [marlingfw.org](https://marlingfw.org "marlingfw.org") or directly from GitHub at [https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9](https://github.com/MarlinFirmware/Marlin/releases/tag/2.0.9).
-
-The example Marlin configuration files can be obtained from GitHub at [https://github.com/MarlinFirmware/Configurations/tree/release-2.0.9/config/examples/Kingroon/KP3](https://github.com/MarlinFirmware/Configurations/tree/release-2.0.9/config/examples/Kingroon/KP3")
-
-## Using these Configuration Files
-The simplest way to update the firmware is to copy the configuration files from this repository into your Marlin firmware folder after downloading and unzipping the firmware.
-
-Copy the files as follows:
-1. Copy **platformio.ini** to the **Marlin** folder
-2. Copy **Configuration.h** to the **Marlin/Marlin** folder.
-3. Copy **Configuration_adv.h** to the **Marlin/Marlin** folder.
-4. Copy **pins_MKS_ROBIN_MINI.h** to the **Marlin/Marlin/src/pins/stm32f1** folder.
-
-## or, Make the Changes Directly
-If you wish to make the changes yourself follow the instructions below.
-### Getting Started
-1. Download the latest Marlin firmware and unzip the files to a working folder.
-2. Download the example configuration files and unzip them into a working folder.
-3. Copy the the Kingroon KP3 configuration files provided by the Marlin firmware examples in **\Configurations\config\examples\Kingroon\KP3** to the Marlin folder in your working folder making sure to overwrite the existing files.
-4. Edit the files listed below with each of the corresponding changes.
 
 |File|Line Number|Reference|Comment|
 |:-|:-:|:-|:-|

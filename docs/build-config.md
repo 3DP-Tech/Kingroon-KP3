@@ -1,6 +1,6 @@
 ### [Home](https://3dp-tech.github.io/Kingroon-KP3/)
 
-# Building the Firmware with Configuration Files
+# Building the Firmware from Configuration Files
 ![](https://github.com/3DP-Tech/Kingroon-KP3/raw/main/Images/screen-205.png)
 
 |Step|Description|
