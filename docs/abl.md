@@ -37,7 +37,7 @@ To add a proximity sensor for auto-bed leveling make the file changes outlined i
 |Configuration.h|1715|Change the value of `#define HOMING_FEEDRATE_MM_M` to **{ (50\*60), (50\*60), (8\*60) }**||
 |Configuration_adv.h|1827|Uncomment `#BABYSTEPPING`||
 |Configuration_adv.h|1838|Uncomment  `#define DOUBLECLICK_FOR_Z_BABYSTEPPING`||
-|Configuration_adv.h|1840|Change `#define DOUBLECLICK_MAX_INTERVA`L value to **2000**||
+|Configuration_adv.h|1840|Change `#define DOUBLECLICK_MAX_INTERVAL` value to **2000**||
 |Configuration_adv.h|1850|Uncomment `#define BABYSTEP_ZPROBE_OFFSET`||
 |Configuration_adv.h|1917|Uncomment `#define PROBING_MARGIN_LEFT` and change value to **15**||
 |Configuration_adv.h|1918|Uncomment `#define PROBING_MARGIN_RIGHT` and change value to **5**||
