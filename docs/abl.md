@@ -12,7 +12,7 @@ To add a proximity sensor for auto-bed leveling make the file changes outlined i
 |Configuration.h|1036|Comment the line `#define PROBE_MANUALLY`||
 |Configuration.h|1042|Uncomment `#define FIX_MOUNTED_PROBE`||
 |Configuration.h|1151|Change the value of `#define NOZZLE_TO_PROBE_OFFSET` to **{ -45, -7, 0 }**|You should measure your mount to determine the correct numbers to use here.|
-|Configuration.h|1161|Change the value of `#define Z_PROBE_FEEDRATE_FAST` to **(8*60)**||
+|Configuration.h|1161|Change the value of `#define Z_PROBE_FEEDRATE_FAST` to **(8\*60)**||
 |Configuration.h|1202|Change the value of `#define MULTIPLE_PROBING` to **2**||
 |Configuration.h|1219|Change the value of `#define Z_CLEARANCE_DEPLOY_PROBE` to **5**||
 |Configuration.h|1220|Change the value of `#define Z_CLEARANCE_BETWEEN_PROBES` to **3**||
@@ -34,7 +34,7 @@ To add a proximity sensor for auto-bed leveling make the file changes outlined i
 |Configuration.h|1643|Uncomment `#define MESH_EDIT_MENU`||
 |Configuration.h|1685|Uncomment and change the value of `#define Z_PROBE_END_SCRIPT` to **“G1 X90 Y90 Z10 F12000"**||
 |Configuration.h|1707|Uncomment `#define Z_SAFE_HOMING`||
-|Configuration.h|1715|Change the value of `#define HOMING_FEEDRATE_MM_M` to **{ (50*60), (50*60), (8*60) }**||
+|Configuration.h|1715|Change the value of `#define HOMING_FEEDRATE_MM_M` to **{ (50\*60), (50\*60), (8\*60) }**||
 |Configuration_adv.h|1827|Uncomment `#BABYSTEPPING`||
 |Configuration_adv.h|1838|Uncomment  `#define DOUBLECLICK_FOR_Z_BABYSTEPPING`||
 |Configuration_adv.h|1840|Change `#define DOUBLECLICK_MAX_INTERVA`L value to **2000**||
