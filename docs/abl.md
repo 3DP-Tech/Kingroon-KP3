@@ -18,7 +18,7 @@ To add a proximity sensor for auto-bed leveling make the file changes outlined i
 |Configuration.h|1220|Change the value of `#define Z_CLEARANCE_BETWEEN_PROBES` to **3**||
 |Configuration.h|1221|Change the value of `#define Z_CLEARANCE_MULTI_PROBE` to **3**||
 |Configuration.h|1222|Uncomment `#define Z_AFTER_PROBING` and set the value to **5**|This line is already uncommented if you are using Marlin from this repository.|
-|Configuration.h|1224|Change the value of `#define Z_PROBE_LOW_POINT` to **-3**||
+|Configuration.h|1224|Change the value of `#define Z_PROBE_LOW_POINT` to **-1**||
 |Configuration.h|1227|Change the value if `#define Z_PROBE_OFFSET_RANGE_MIN` to **-4**||
 |Configuration.h|1228|Change the value of `#define Z_PROBE_OFFSET_RANGE_MAX` to **4**||
 |Configuration.h|1231|Uncomment `#define Z_MIN_PROBE_REPEATABILITY_TEST`||
