@@ -10,4 +10,5 @@ This folder contains the configuration files for my Kingroon KP3 configuration:
 |Configuration.h|899|Changed 400 to 1600 in `#define DEFAULT_AXIS_STEPS_PER_UNIT`||
 |Configuration.h|906|Changed 5 to 10 in `#define DEFAULT_MAX_FEEDRATE`||
 |Configuration.h|919|Changed 100 to 400 in `#define DEFAULT_MAX_ACCELERATION`||
-|Configuration.h|950|Changed 0.3 to 1.0 in `#define DEFAULT_ZJERK`||
+|Configuration.h|950|Changed 0.3 to 1.2 in `#define DEFAULT_ZJERK`||
+|Configuration.h|1349|Set value `#define Z_MAX_POS` to 240||
