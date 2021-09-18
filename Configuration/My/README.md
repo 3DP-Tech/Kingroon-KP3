@@ -6,7 +6,7 @@ This folder contains the configuration files for my Kingroon KP3 configuration:
 
 ## My Configuratio Changes
 ### Auto Bed Leveling
-[](https://github.com/3DP-Tech/Kingroon-KP3/blob/main/docs/abl.md)
+[See ABL Changes](https://github.com/3DP-Tech/Kingroon-KP3/blob/main/docs/abl.md)
 
 ### Changes for Z
 |File|Line Number|Reference|Comment|
