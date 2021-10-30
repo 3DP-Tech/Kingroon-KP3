@@ -7,39 +7,36 @@ To add a proximity sensor for auto-bed leveling make the file changes outlined i
 
 ## File Changes
 
-|File|Line Number|Reference|Comment|
-|:-|:-:|:-|:-|
-|Configuration.h|1036|Comment the line `#define PROBE_MANUALLY`||
-|Configuration.h|1042|Uncomment `#define FIX_MOUNTED_PROBE`||
-|Configuration.h|1151|Change the value of `#define NOZZLE_TO_PROBE_OFFSET` to **{ -45, -7, 0 }**|You should measure your mount to determine the correct numbers to use here.|
-|Configuration.h|1161|Change the value of `#define Z_PROBE_FEEDRATE_FAST` to **(8\*60)**||
-|Configuration.h|1202|Change the value of `#define MULTIPLE_PROBING` to **2**||
-|Configuration.h|1219|Change the value of `#define Z_CLEARANCE_DEPLOY_PROBE` to **5**||
-|Configuration.h|1220|Change the value of `#define Z_CLEARANCE_BETWEEN_PROBES` to **3**||
-|Configuration.h|1221|Change the value of `#define Z_CLEARANCE_MULTI_PROBE` to **3**||
-|Configuration.h|1222|Uncomment `#define Z_AFTER_PROBING` and set the value to **5**|This line is already uncommented if you are using Marlin from this repository.|
-|Configuration.h|1224|Change the value of `#define Z_PROBE_LOW_POINT` to **-1**||
-|Configuration.h|1227|Change the value if `#define Z_PROBE_OFFSET_RANGE_MIN` to **-4**||
-|Configuration.h|1228|Change the value of `#define Z_PROBE_OFFSET_RANGE_MAX` to **4**||
-|Configuration.h|1231|Uncomment `#define Z_MIN_PROBE_REPEATABILITY_TEST`||
-|Configuration.h|1246|Uncomment `#define PROBING_HEATERS_OFF`||
-|Configuration.h|1323|Uncomment `#define Z_HOMING_HEIGHT`|This line is already uncommented if you are using Marlin from this repository.|
-|Configuration.h|1371|Comment the line `#define MIN_SOFTWARE_ENDSTOP_Z`||
-|Configuration.h|1507|Uncomment `#define AUTO_BED_LEVELING_BILINEAR`||
-|Configuration.h|1509|Comment the line `#define MESH_BED_LEVELING`||
-|Configuration.h|1516|Comment the line `#define RESTORE_LEVELING_AFTER_G28`||
-|Configuration.h|1546|Change the value of `#define DEFAULT_LEVELING_FADE_HEIGHT` to **4**||
-|Configuration.h|1574|Change the value of `#define GRID_MAX_POINTS_X` to **4**||
-|Configuration.h|1584|Uncomment `#define EXTRAPOLATE_BEYOND_GRID`||
-|Configuration.h|1643|Uncomment `#define MESH_EDIT_MENU`||
-|Configuration.h|1685|Uncomment and change the value of `#define Z_PROBE_END_SCRIPT` to **“G1 X90 Y90 Z10 F12000"**||
-|Configuration.h|1707|Uncomment `#define Z_SAFE_HOMING`||
-|Configuration.h|1715|Change the value of `#define HOMING_FEEDRATE_MM_M` to **{ (50\*60), (50\*60), (8\*60) }**||
-|Configuration_adv.h|1827|Uncomment `#BABYSTEPPING`||
-|Configuration_adv.h|1838|Uncomment  `#define DOUBLECLICK_FOR_Z_BABYSTEPPING`||
-|Configuration_adv.h|1840|Change `#define DOUBLECLICK_MAX_INTERVAL` value to **2000**||
-|Configuration_adv.h|1850|Uncomment `#define BABYSTEP_ZPROBE_OFFSET`||
-|Configuration_adv.h|1917|Uncomment `#define PROBING_MARGIN_LEFT` and change value to **15**||
-|Configuration_adv.h|1918|Uncomment `#define PROBING_MARGIN_RIGHT` and change value to **5**||
-|Configuration_adv.h|1919|Uncomment `#define PROBING_MARGIN_FRONT` and change value to **20**||
-|Configuration_adv.h|1920|Uncomment `#define PROBING_MARGIN_BACK` and change value to **20**||
+|File|Reference|Comment|
+|:-|:-|:-|
+|Configuration.h|`#define PROBE_MANUALLY`|Comment this line|
+|Configuration.h|`#define FIX_MOUNTED_PROBE`| Uncomment this line|
+|Configuration.h|`#define NOZZLE_TO_PROBE_OFFSET`|Change the value to **{ -45, -7, 0 }**. You should measure your mount to determine the correct numbers to use here.|
+|Configuration.h|`#define Z_PROBE_FEEDRATE_FAST`|Change the value to **(8\*60)**|
+|Configuration.h|`#define MULTIPLE_PROBING`|Change the value to **2**|
+|Configuration.h|`#define Z_AFTER_PROBING`Uncomment and change the value and set the value to **5**|
+|Configuration.h|`#define Z_PROBE_LOW_POINT`|Change the value to **-1**|
+|Configuration.h|`#define Z_PROBE_OFFSET_RANGE_MIN`|Change the value to **-4**|
+|Configuration.h|`#define Z_PROBE_OFFSET_RANGE_MAX`|Change the value to **4**|
+|Configuration.h|`#define Z_MIN_PROBE_REPEATABILITY_TEST`|Uncomment this line|
+|Configuration.h|`#define PROBING_HEATERS_OFF`|Uncomment this line|
+|Configuration.h|`#define MIN_SOFTWARE_ENDSTOP_Z`|Comment this ine|
+|Configuration.h|`#define AUTO_BED_LEVELING_BILINEAR`|Uncomment this line|
+|Configuration.h|`#define MESH_BED_LEVELING`|Comment this ine|
+|Configuration.h|`#define RESTORE_LEVELING_AFTER_G28`|Comment this ine|
+|Configuration.h|`#define ENABLE_LEVELING_AFTER_G28`|Uncomment this line|
+|Configuration.h|`#define GRID_MAX_POINTS_X`|Change the value to **4**|
+|Configuration.h|`#define EXTRAPOLATE_BEYOND_GRID`|Uncomment this line|
+|Configuration.h|`#define Z_PROBE_END_SCRIPT`|Uncomment this line and change the value to **“G1 X90 Y90 Z10 F12000"**|
+|Configuration.h|`#define Z_SAFE_HOMING`|Uncomment this line|
+|Configuration.h|`#define HOMING_FEEDRATE_MM_M`|Change the value to **{ (20\*60), (20\*60), (8\*60) }**|
+|Configuration_adv.h|`#BABYSTEPPING`|Uncomment this line|
+|Configuration_adv.h|`#define BABYSTEP_ALWAYS_AVAILABLE `|Uncomment this line|
+|Configuration_adv.h|`#define DOUBLECLICK_FOR_Z_BABYSTEPPING`|Uncomment this line|
+|Configuration_adv.h|`#define BABYSTEP_ZPROBE_OFFSET`|Uncomment this line|
+|Configuration_adv.h|`#define PROBING_MARGIN_LEFT`|Uncomment this line and change value to **15**|
+|Configuration_adv.h|`#define PROBING_MARGIN_RIGHT`|Uncomment this line and change value to **5**|
+|Configuration_adv.h|`#define PROBING_MARGIN_FRONT`|Uncomment this line and change value to **20**|
+|Configuration_adv.h|`#define PROBING_MARGIN_BACK`|Uncomment this line and change value to **20**|
+|Configuration_adv.h|`#define ASSISTED_TRAMMING`|Uncomment this line|
+|Configuration_adv.h|`#define TRAMMING_POINT_XY`|Change value to **{ { 50, 50 }, { 130,  50 }, { 130, 130 }, { 50, 130 } }**|

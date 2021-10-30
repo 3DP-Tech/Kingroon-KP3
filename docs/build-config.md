@@ -5,14 +5,14 @@
 
 |Step|Description|
 |:-:|-|
-|1|Download the Marlin 2.0.9.0 files from [https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip](https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.zip)|
+|1|Download the Marlin 2.0.9.2 files from [https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.2.zip](https://github.com/MarlinFirmware/Marlin/archive/refs/tags/2.0.9.2.zip)|
 |2|Unzip the Marlin files into a woking folder. Keep track of this folder's location.|
-|3|Download the files the repository from [https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip](https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2090.2.zip)|
+|3|Download the files the repository from [https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2092.1.zip](https://github.com/3DP-Tech/Kingroon-KP3/archive/refs/tags/M.2092.1.zip)|
 |4|Unzip the repository files into a working folder. Keep track of this folder's location.|
-|5|Copy the file **Kingroon-KP3-M.2090.2\Configuration\platformio.ini** to the folder **Marlin-2.0.9**.|
-|6|Copy the file **Kingroon-KP3-M.2090.2\Configuration\Configuration.h** to the folder **Marlin-2.0.9\Marlin**.|
-|7|Copy the file **Kingroon-KP3-M.2090.2\Configuration\Configuration_adv.h** to the folder **Marlin-2.0.9\Marlin**.|
-|8|Copy the file **Kingroon-KP3-M.2090.2\Configuration\pins_MKS_ROBIN_MINI.h** to the folder **Marlin-2.0.9\Marlin\src\pins\stm32f1**.|
+|5|Copy the file **Kingroon-KP3-M.2092.1\Configuration\platformio.ini** to the folder **Marlin-2.0.9.2**.|
+|6|Copy the file **Kingroon-KP3-M.2092.1\Configuration\Configuration.h** to the folder **Marlin-2.0.9.2\Marlin**.|
+|7|Copy the file **Kingroon-KP3-M.2092.1\Configuration\Configuration_adv.h** to the folder **Marlin-2.0.9.2\Marlin**.|
+|8|Copy the file **Kingroon-KP3-M.2092.1\Configuration\pins_MKS_ROBIN_MINI.h** to the folder **Marlin-2.0.9.2\Marlin\src\pins\stm32f1**.|
 |9|Compile the firmware using Visual Studio Code. There are numerous videos available on how to compile the code using Visual Studio Code with the Platform IO and Marlin Autobuild extensions. This process is extremely easy. Here is one that I like: [https://www.youtube.com/watch?v=eq_ygvHF29I](https://www.youtube.com/watch?v=eq_ygvHF29I "https://www.youtube.com/watch?v=eq_ygvHF29I")|
 |10|Flash the firmware using the binary file produced as a result of step 9.|
 

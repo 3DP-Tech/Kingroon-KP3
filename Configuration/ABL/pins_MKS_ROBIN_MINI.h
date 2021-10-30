@@ -22,7 +22,7 @@
 #pragma once
 
 /**
- * MKS Robin mini (STM32F103VET6) board pin assignments
+ * MKS Robin mini (STM32F130VET6) board pin assignments
  */
 
 #include "env_validate.h"
@@ -96,7 +96,7 @@
 #define MOTOR_CURRENT_PWM_E_PIN             PB0
 #define MOTOR_CURRENT_PWM_RANGE             1500  // (255 * (1000mA / 65535)) * 257 = 1000 is equal 1.6v Vref in turn equal 1Amp
 #ifndef DEFAULT_PWM_MOTOR_CURRENT
-  #define DEFAULT_PWM_MOTOR_CURRENT { 700, 850, 800 }
+  #define DEFAULT_PWM_MOTOR_CURRENT { 800, 800, 800 }
 #endif
 
 //
@@ -119,10 +119,8 @@
 #define POWER_LOSS_PIN                      PA2   // PW_DET
 #define PS_ON_PIN                           PA3   // PW_OFF
 
-#if HAS_TFT_LVGL_UI
-  #define MT_DET_1_PIN                      PA4   // MT_DET
-  #define MT_DET_PIN_STATE                  LOW
-#endif
+#define MT_DET_1_PIN                        PA4
+#define MT_DET_PIN_INVERTING               false
 
 #define WIFI_IO0_PIN                        PC13
 
@@ -151,13 +149,11 @@
  */
 #if EITHER(HAS_FSMC_GRAPHICAL_TFT, TFT_320x240)
   #define FSMC_CS_PIN                       PD7   // NE4
-  #define TFT_CS_PIN                        PD7   // NE4
   #define FSMC_RS_PIN                       PD11  // A0
-  #define TFT_RS_PIN                        PD11  // A0
 
   #define TFT_USE_DMA_FSMC                        // Use DMA transfers to send data to the TFT
   #define FSMC_DMA_DEV                      DMA2
-  #define FSMC_DMA_CHANNEL                  DMA_CH5
+  #define FSMC_DMA_CHANNEL               DMA_CH5
 
   #define TFT_RESET_PIN                     PC6   // FSMC_RST
   #define TFT_BACKLIGHT_PIN                 PD13
@@ -198,8 +194,8 @@
 #define HAS_SPI_FLASH                          1
 #if HAS_SPI_FLASH
   #define SPI_FLASH_SIZE               0x1000000  // 16MB
-  #define SPI_FLASH_CS_PIN                  PB12  // Flash chip-select
-  #define SPI_FLASH_MOSI_PIN                PB15
-  #define SPI_FLASH_MISO_PIN                PB14
-  #define SPI_FLASH_SCK_PIN                 PB13
+  #define W25QXX_CS_PIN                     PB12  // Flash chip-select
+  #define W25QXX_MOSI_PIN                   PB15
+  #define W25QXX_MISO_PIN                   PB14
+  #define W25QXX_SCK_PIN                    PB13
 #endif
